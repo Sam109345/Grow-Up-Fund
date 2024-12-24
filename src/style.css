@@ -575,6 +575,10 @@ color: #7B7A7D;
     color: #002631;
  }
 
+p.footer-content {
+    text-align: left !important;
+}
+
  .increase-description-right{
     font-family: Montserrat;
     font-size: 20px;
