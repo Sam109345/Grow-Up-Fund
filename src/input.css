@@ -1,0 +1,58 @@
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Visby Fonts */
+
+/* VisbyBold */
+@font-face {
+  font-family: "VisbyBold";
+  src: url("../fonts/VisbyBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* VisbyBoldItalic */
+@font-face {
+  font-family: "VisbyBoldItalic";
+  src: url("../fonts/VisbyBoldItalic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* VisbyExtrabold */
+@font-face {
+  font-family: "VisbyExtrabold";
+  src: url("../fonts/VisbyExtrabold.otf") format("opentype");
+  font-weight: extrabold;
+  font-style: normal;
+}
+
+/* VisbyExtraboldItalic */
+@font-face {
+  font-family: "VisbyExtraboldItalic";
+  src: url("../fonts/VisbyExtraboldItalic.otf") format("opentype");
+  font-weight: extrabold;
+  font-style: italic;
+}
+
+/* VisbyHeavy */
+@font-face {
+  font-family: "VisbyHeavy";
+  src: url("../fonts/VisbyHeavy.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* VisbyHeavyItalic */
+@font-face {
+  font-family: "VisbyHeavyItalic";
+  src: url("../fonts/VisbyHeavyItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+  font-family: "VisbyRegular", sans-serif;
+}

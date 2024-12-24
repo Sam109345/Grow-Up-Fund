@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+
+</head>
+
+<header>
+  <!-- Header Start -->
+  <div class="bg-transparent">
+    <nav class="w-full max-w-[1100px] mx-auto flex items-center p-4 justify-between">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="#">
+          <img class="mobile:h-8 w-auto" src="images/logo.png" alt="Logo">
+        </a>
+      </div>
+
+      <!-- Navigation -->
+      <div class="hidden tablet:flex flex-auto justify-center">
+        <ul class="flex space-x-4">
+          <li class="navigation-text cursor-pointer font-bold">Home</li>
+          <li class="navigation-text cursor-pointer">About Us</li>
+          <li class="navigation-text cursor-pointer">How It Works</li>
+          <li class="navigation-text cursor-pointer">Giftings</li>
+          <li class="navigation-text cursor-pointer">Blogs</li>
+        </ul>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="hamburger-button" class="tablet:hidden text-xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Download Button -->
+      <div class="hidden mobile:hidden tablet:block">
+        <button class="download-button bg-green-500 text-white px-5 py-1.5 rounded-3xl hover:bg-green-400">
+          Download App
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden bg-gray-100 p-4">
+      <ul class="flex flex-col space-y-2">
+        <li class="navigation-text cursor-pointer font-bold">Home</li>
+        <li class="navigation-text cursor-pointer">About Us</li>
+        <li class="navigation-text cursor-pointer">How It Works</li>
+        <li class="navigation-text cursor-pointer">Giftings</li>
+        <li class="navigation-text cursor-pointer">Blogs</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Header End -->
+</header>
+
+<!-- JavaScript for Toggle -->
+<script>
+  document.getElementById('hamburger-button').addEventListener('click', () => {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+
+<body>
+  <!-- Landing Page Start -->
+
+  <!-- Banner -->
+  <div
+    class=" mx-auto banner flex items-center justify-center h-[100vh] mobile:h-[420px] mobile:m-0 mt-[-140px] mobile:mt-0">
+    <h1
+      class="mainbannerheading mobile:leading-[22px] font-bold text-6xl mobile:text-[20px] font-sans leading-[68px] text-[#59B247] text-center">
+      A GREAT APP MAKES<br>YOUR LIFE
+
+      BETTER</h1>
+    <p class="desc">
+      Grow Up Fund empowers you to make a lasting impact by supporting a child's future. Through small<br>
+      contributions, family, friends, and loved ones can collectively build a fund that enables a child to achieve
+      their<br> dreams, whether it's education, experiences, or life goals.
+    </p>
+    <img class="my-4 w-[280px]" src="images/play.png" alt="playstoreimage">
+    <img class="w-[60%] mt-10 mobile:w-[100%] mobile:mt-0 " src="images/Banner 6 1.png">
+  </div>
+  <!-- Banner End -->
+
+  <section class="max-w-[1200px] mobile:w-[100%] mx-auto text-center py-24">
+    <div class="heading-div">
+      <h2 class="awesometitle">Awesome Features</h2>
+      <p class="awe-desc text-center">
+        Sed laoreet diam sagittis tempus convallis. Interdum et malesuada fames ac ante ipsum<br> primis in faucibus.
+      </p>
+    </div>
+
+    <div class="mobile:w-full features-container">
+      <!-- Left Section -->
+      <div class="left-div">
+        <div class="advance-div">
+          <div class="inline left-box">
+            <img class="advance-image" src="images/Group.png" alt="">
+            <h1 class="advance-heading">Custom Shortcuts</h1>
+          </div>
+          <div class="inline-block">
+            <p class="awesome-description">
+              Semper a suscipit, luctus neque purus ipsum neque dolor primis libero.
+            </p>
+          </div>
+        </div>
+
+        <div class="advance-div">
+          <div class="left-box">
+            <img class="advance-image" src="images/Vector.png" alt="">
+            <h1 class="advance-heading">Secure Integration</h1>
+          </div>
+          <div class="inline-block">
+            <p class="awesome-description">
+              Semper a suscipit, luctus neque purus ipsum neque dolor primis libero.
+            </p>
+          </div>
+        </div>
+
+        <div class="advance-div">
+          <div class="inline left-box">
+            <img class="advance-image" src="images/noun-chat-7397753 1.png" alt="">
+            <h1 class="advance-heading">Free Live Chat</h1>
+          </div>
+          <div class="inline-block">
+            <p class="awesome-description">
+              Semper a suscipit, luctus neque purus ipsum neque dolor primis libero.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="center-div">
+        <img class="center-img" src="images/awesome-features 1.png">
+      </div>
+      <div class="features-container">
+        <!-- right Section -->
+        <div class="right-div mobile:w-full">
+          <div class="advance-div">
+            <div class="inline right-box">
+              <img class="advance-image-right" src="images/social.png" alt="">
+              <h1 class="advance-heading-right">Social Share</h1>
+            </div>
+            <div class="inline-block">
+              <p class="awesome-description-right">
+                Semper a suscipit, luctus neque purus ipsum neque dolor primis libero.
+              </p>
+            </div>
+          </div>
+
+          <div class="advance-div">
+            <div class="inline right-box">
+              <img class="advance-image-right" src="images/Group (5).png" alt="">
+              <h1 class="advance-heading-right">Merge Files</h1>
+            </div>
+            <div class="inline-block">
+              <p class="awesome-description-right">
+                Semper a suscipit, luctus neque purus ipsum neque dolor primis libero.
+              </p>
+            </div>
+          </div>
+
+          <div class="advance-div">
+            <div class="inline right-box">
+              <img class="advance-image-right" src="images/Group (6).png" alt="">
+              <h1 class="advance-heading-right">Action Reminder</h1>
+            </div>
+            <div class="inline-block">
+              <p class="awesome-description-right">
+                Semper a suscipit, luctus neque purus ipsum neque dolor primis libero.
+              </p>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- How It Works? Start -->
+  <section class="how-it-works-main">
+    <div>
+      <h2 class="text-[60px] text-[#59B247] how-it-work-heading">How It Works?</h2>
+      <p class="text-center text-white how-it-work-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Aenean commodo justo. Nullam<br> dictum felis eu pede mollis pretium.</p>
+    </div>
+    <div class="desktop:flex w-[1200] mobile:w-[100px] mx-auto place-self-center text-center mobile:flex main-child-div">
+      <div class="inner-div">
+        <img class="place-self-center pb-9" src="images/noun-data-53338 1.png" alt="">
+        <h2 class="inner-div-heading">Your Data in Cloud</h2>
+        <p class="inner-div-para">Semper a suscipit, luctus neque purus ipsum neque dolor primis libero. </p>
+      </div>
+
+      <div class="inner-div">
+        <img class="place-self-center pb-9" src="images/noun-support-5504379 1.png" alt="">
+        <h2 class="inner-div-heading">Your Data in Cloud</h2>
+        <p class="inner-div-para">Semper a suscipit, luctus neque purus ipsum neque dolor primis libero. </p>
+      </div>
+
+      <div class="inner-div">
+        <img class="place-self-center pb-9" src="images/noun-pentool-6224315 1.png" alt="">
+        <h2 class="inner-div-heading">Your Data in Cloud</h2>
+        <p class="inner-div-para">Semper a suscipit, luctus neque purus ipsum neque dolor primis libero. </p>
+      </div>
+    </div>
+  </section>
+  <!-- How it works end -->
+
+  <!-- Increase Your Productivity With Finance Apps! Start -->
+
+  <section class="flex max-w-[1200px] mx-auto mobile:w-[100%] py-14 mobile:flex-col">
+    <div class="image-div">
+      <img class="mobile-image" src="images/Banner 1 1.png" alt="">
+    </div>
+
+    <div class="content-right-div">
+      <div>
+        <h2 class="mobile-screen-heading font-serif font-bold uppercase leading-[70px]">
+          Increase Your Productivity With Finance Apps!
+        </h2>
+        <p class="mobile-screen-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor
+          incididunt ut labore et dolore<br>magna aliqua</p>
+      </div>
+      <div class="box-shadow-div">
+        <div class="advance-div">
+          <img class="mobile-image-small" src="images/mobile-setting.png" alt="">
+          <h1 class="advance-heading-right">User Friendly Design</h1>
+        </div>
+        <p class="increase-description-right flex ">
+          Semper a suscipit, luctus neque purus ipsum neque dolor primis libero.
+        </p>
+      </div>
+
+      <div class="box-shadow-div">
+        <div class="advance-div">
+          <img class="mobile-image-small" src="images/laptop_mobile.png" alt="">
+          <h1 class="advance-heading-right">User Friendly Design</h1>
+        </div>
+        <p class="increase-description-right flex">
+          Semper a suscipit, luctus neque purus ipsum neque dolor primis libero.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto video-section">
+    <img src="images/noun-play-1807840 1.png" alt="Play Icon">
+    <h2 class="watch font-[30px] leading-8">Watch This Video</h2>
+  </section>
+
+  <section class="py-0 mobile:pt-[20px]">
+    <h2 class="mobile-screen-heading text-center pt-10">
+      Client Reviews
+    </h2>
+    <!-- Testimonials Slider -->
+
+
+    <section class="testimonial">
+      <div class="container">
+        <div class="testimonial-content">
+          <!-- Review Content -->
+          <div class="review-description">
+            <p id="review-text"> Aenean sit amet est orci. Aenean at nisi eget nulla lobortis<br> commodo. Nam eget
+              lorem in ex aliquam dapibus sed augue<br>auctor purus vitae, venenatis ex.</p>
+          </div>
+          <!-- Review Images -->
+          <div class="review-images">
+            <div class="image-container">
+              <img src="images/Ellipse 41.png" alt="Customer 1" class="customer-image active-image" data-index="0" />
+            </div>
+            <div class="image-container">
+              <img src="images/Ellipse 42.png" alt="Customer 2" class="customer-image" data-index="1" />
+            </div>
+            <div class="image-container">
+              <img src="images/Ellipse 38.png" alt="Customer 3" class="customer-image" data-index="2" />
+            </div>
+            <div class="image-container">
+              <img src="images/Ellipse 39.png" alt="Customer 4" class="customer-image" data-index="3" />
+            </div>
+            <div class="image-container">
+              <img src="images/Ellipse 42.png" alt="Customer 5" class="customer-image" data-index="4" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Reviews Section End -->
+
+
+    <!-- Screenshorts Slider Gallery Section Start -->
+    <section class="bg-[#F3F3F3] py-24">
+      <section class="mx-auto w-[1200px] mobile:w-[100%] ">
+        <div>
+          <h2 class="mobile-screen-heading text-center">
+            Screenshots From The App
+          </h2>
+          <p class="text-center desc-of-showcase">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
+            ante velit vitae. Est tellus <br>vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+            ullamcorper velit.<br> Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+        </div>
+
+        <div>
+          <img class="mobile:w-full" src="images/App Screenshort (2).png" alt="Screenshort of GrowUp Fund">
+        </div>
+
+      </section>
+    </section>
+    <!-- Screenshots section end -->
+
+    <!-- Marketing section start -->
+    <section class="mobile:w-full mobile:px-3 my-10">
+      <div class="mx-auto w-[1200px] mobile:w-full marketing-section my-2 mobile:px-2">
+        <h2 class="marketing-heading text-center px-[8px]">App is available for <br>All devices</h2>
+        <p class="text-center desc-of-marketing py-2 mobile:px-[12px]">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Viverra nunc ante velit vitae. Est tellus <br>vitae, nullam lobortis enim. Faucibus amet
+          etiam tincidunt rhoncus, ullamcorper velit.<br> Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+        <img class="place-self-center" src="images/google play.png">
+        <p class="text-center pt-3 desc-of-marketing">Available on iPhone and all Android devices</p>
+      </div>
+    </section>
+    <!-- Marketing section end -->
+
+    <!-- faq section start -->
+
+    <section class="mobile:w-full mb-20 mobile:px-3 mobile:py[20px]">
+      <h2 class="mobile-screen-heading text-center">
+        Have questions? Look here
+      </h2>
+      <p class="text-center desc-of-faq py-2">Find answers to the most common questions, covering everything from setup
+        to advanced <br>features, to help you get the most out of the platform.</p>
+
+      <div class="accordion-container mx-auto w-[1200px] mobile:w-full">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            How to install App?
+            <img src="images/open.png" alt="Toggle Icon">
+          </div>
+          <div class="panel">
+            To install App, follow the step-by-step instructions in the provided documentation. It covers everything you
+            need to set up and customize the theme effortlessly.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            How can I edit my personal information?
+            <img src="images/open.png" alt="Toggle Icon">
+          </div>
+          <div class="panel">
+            To install App, follow the step-by-step instructions in the provided documentation. It covers everything you
+            need to set up and customize the theme effortlessly.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            Do you have a free trial?
+            <img src="images/open.png" alt="Toggle Icon">
+          </div>
+          <div class="panel">
+            To install App, follow the step-by-step instructions in the provided documentation. It covers everything you
+            need to set up and customize the theme effortlessly.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            Can I get support from the Author?
+            <img src="images/open.png" alt="Toggle Icon">
+          </div>
+          <div class="panel">
+            <p>To install App, follow the step-by-step instructions in the provided documentation. It covers everything
+              you need to set up and customize the theme effortlessly.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            Contact form isn't working?
+            <img src="images/open.png" alt="Toggle Icon">
+          </div>
+          <div class="panel">
+            To install App, follow the step-by-step instructions in the provided documentation. It covers everything you
+            need to set up and customize the theme effortlessly.
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', () => {
+          const accordionItem = header.parentElement;
+          const isActive = accordionItem.classList.contains('active');
+
+          // Close all accordion items
+          document.querySelectorAll('.accordion-item').forEach(item => {
+            item.classList.remove('active');
+            item.querySelector('.accordion-header img').src = "images/open.png";
+          });
+
+          // Toggle the clicked accordion
+          if (!isActive) {
+            accordionItem.classList.add('active');
+            header.querySelector('img').src = "images/closed.png";
+          }
+        });
+      });
+    </script>
+    <!-- Faq Section End -->
+
+    <!-- form section start -->
+    <section>
+      <div class="mx-auto w-full before-footer pt-44 pb-72">
+        <div class="w-[38%] place-self-center newsletter-section">
+          <h2 class="marketing-heading text-center">Subscribe To Newsletter</h2>
+          <p class="text-center desc-of-marketing py-2">Vivamus ornare feugiat orci eu faucibus. Phasellus nulla arcu,
+            pharetra nec laoreet in,<br> scelerisque a lectus.</p>
+          <div class="mb-4">
+            <input type="email" id="email" placeholder="Enter Your Email Address"
+              class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+
+          <button
+            class="submit-button w-full text-white bg-[#59B247] h-[60px] border-0 py-2 px-6 focus:outline-none hover:bg-[#70e059] rounded text-lg">Subscribe</button>
+        </div>
+      </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- Contact Detail Section Design -->
+
+    <div id="" class="contact-details ">
+      <div
+        class="contactdetails-inner relative ml-7 mobile:max-w-[100%] mobile:hidden mx-auto flex flex-row justify-between items-center content-between bg-white py-8 px-44">
+        <div class="inner-div-contact flex flex-row content-center items-center">
+          <img src="images/Email Icon.png" alt="">
+          <h2 class="emailtext ml-2 text-[#232233] text-[25px]">info@youremail.com</h2>
+        </div>
+        <div class="imgline">
+          <img src="images/Line 2.png" alt="">
+        </div>
+        <div class="inner-div-contact-2 ml-8 flex flex-row content-center items-center ml-6">
+          <img src="images/Call.png" alt="">
+          <h2 class="emailtext text-[#232233] text-[25px]">+880 321 655 9985</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Detail Section Design End -->
+</body>
+<footer class="footer mx-auto">
+  <div class="mainfooterinner w-full desktop:w-[1400px] px-4 desktop:px-0 relative flex flex-col desktop:flex-row justify-center desktop:justify-between pt-20 desktop:pt-60 pb-6 desktop:pb-[20px] mt-[-8.5em]">
+    <!-- Logo Section -->
+    <div class="logo-div w-full desktop:w-[39%] flex flex-col items-center desktop:items-start text-center desktop:text-left">
+      <img src="images/logo.png" alt="" class="mb-4">
+      <p class="footer-content">
+        Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Viverra<br> nunc ante velit vitae.
+      </p>
+      <img src="images/Social Icon.png" alt="" class="social mt-4">
+    </div>
+    <!-- Quick Links Section -->
+    <div class="quicklinks w-full desktop:w-[14.8%] mt-6 desktop:mt-0 flex flex-col items-center desktop:items-start">
+      <h3 class="quicklinks mb-4">Quick Links</h3>
+      <h4 class="pagelist">About Us</h4>
+      <h4 class="pagelist">Features</h4>
+      <h4 class="pagelist">Screenshots</h4>
+      <h4 class="pagelist">Blog</h4>
+    </div>
+    <!-- Download App Section -->
+    <div class="downloadapp w-full desktop:w-[17.7%] mt-6 desktop:mt-0 flex flex-col items-center desktop:items-start">
+      <h3 class="download-app mb-4">Download App</h3>
+      <img src="images/Google Play (1).png" class="mb-2">
+      <img src="images/Apple Play.png">
+    </div>
+  </div>
+  <!-- Line Above Copyright Section -->
+  <div class="lineabovecopywrite mx-auto flex flex-col items-center mt-6 desktop:mt-12">
+    <img src="images/Line 3.png" alt="" class="mb-2">
+    <p class="copywrite text-center">
+      © Copyright 2024 . All Right Reserved.
+    </p>
+  </div>
+</footer>
+
+
+</html>
