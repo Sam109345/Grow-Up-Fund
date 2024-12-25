@@ -42,8 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateReviewContent = (index) => {
         // Update review text, customer name, and city
         reviewText.textContent = reviewData[index].text;
-        customerName.textContent = reviewData[index].name;
-        customerCity.textContent = reviewData[index].city;
 
         // Update images to highlight the active one
         images.forEach((image, i) => {
