@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const customerName = document.getElementById('customer-name');
     const customerCity = document.getElementById('customer-city');
 
+
+    
     // Define the review data for each customer
     const reviewData = [
         {
