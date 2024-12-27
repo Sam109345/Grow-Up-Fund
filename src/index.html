@@ -7,13 +7,12 @@
   <link href="output.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <script src="script.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 </head>
 
 <header>
@@ -157,7 +156,7 @@
               <p class="awesome-description-right">
                 Semper a suscipit, luctus neque purus ipsum neque dolor primis libero.
               </p>
-            </div> 
+            </div>
           </div>
 
           <div class="advance-div">
@@ -257,7 +256,7 @@
     <h2 class="watch font-[30px] leading-8">Watch This Video</h2>
   </section>
 
-  <section class="py-0 mobile:pt-[20px]">
+  <section class="mx-auto py-0 mobile:pt-[20px]">
     <h2 class="mobile-screen-heading text-center pt-10">
       Client Reviews
     </h2>
@@ -265,7 +264,7 @@
 
 
     <section class="testimonial">
-      <div class="container">
+      <div class="mx-auto container">
         <div class="testimonial-content">
           <!-- Review Content -->
           <div class="review-description">
@@ -299,7 +298,7 @@
 
     <!-- Screenshorts Slider Gallery Section Start -->
     <section class="bg-[#F3F3F3] py-24">
-      <section class="mx-auto w-[1200px] mobile:w-[100%] ">
+      <div class="mx-auto w-[1200px] mobile:w-[100%] ">
         <div>
           <h2 class="mobile-screen-heading text-center">
             Screenshots From The App
@@ -308,13 +307,60 @@
             ante velit vitae. Est tellus <br>vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
             ullamcorper velit.<br> Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
         </div>
-
-        <div>
-          <img class="mobile:w-full" src="images/App Screenshort (2).png" alt="Screenshort of GrowUp Fund">
+      </div>
+      <!-- Swiper -->
+      <div class="swiper-container two">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-image">
+              <img src="images/slide01.png" alt="slide 1">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-image">
+              <img src="images/slide02.png" alt="slide 2">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-image">
+              <img src="images/slide03.png" alt="slide 3">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-image">
+              <img src="images/slide04.png" alt="slide 4">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-image">
+              <img src="images/slide05.png" alt="slide 5">
+            </div>
+          </div>
+          <!-- Add Pagination -->
         </div>
+        <div class="swiper-pagination"></div>
+      </div>
 
-      </section>
     </section>
+    <script>
+      var swiper = new Swiper( '.swiper-container.two', {
+          pagination: '.swiper-pagination',
+          paginationClickable: true,
+          effect: 'coverflow',
+          loop: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflow: {
+            rotate: 0,
+            stretch: 100,
+            depth: 150,
+            modifier: 1.5,
+            slideShadows : false,
+          }
+      } );
+      </script>
+
+
     <!-- Screenshots section end -->
 
     <!-- Marketing section start -->
@@ -439,10 +485,10 @@
 
     <!-- Contact Detail Section Design -->
 
-    <div id="" class="contact-details ">
+    <div id="" class="mx-auto contact-details ">
       <div
         class="contactdetails-inner relative ml-7 mobile:max-w-[100%] mobile:hidden mx-auto flex flex-row justify-between items-center content-between bg-white py-8 px-44">
-        <div class="inner-div-contact flex flex-row content-center items-center">
+        <div class="mx-auto inner-div-contact flex flex-row content-center items-center">
           <img src="images/Email Icon.png" alt="">
           <h2 class="emailtext ml-2 text-[#232233] text-[25px]">info@youremail.com</h2>
         </div>
@@ -458,9 +504,11 @@
     <!-- Contact Detail Section Design End -->
 </body>
 <footer class="footer mx-auto">
-  <div class="mainfooterinner w-full desktop:w-[1400px] px-4 desktop:px-0 relative flex flex-col desktop:flex-row justify-center desktop:justify-between pt-20 desktop:pt-60 pb-6 desktop:pb-[20px] mt-[-8.5em]">
+  <div
+    class="mainfooterinner w-full desktop:w-[1400px] px-4 desktop:px-0 relative flex flex-col desktop:flex-row justify-center desktop:justify-between pt-20 desktop:pt-60 pb-6 desktop:pb-[20px] mt-[-8.5em]">
     <!-- Logo Section -->
-    <div class="logo-div w-full desktop:w-[39%] flex flex-col items-center desktop:items-start text-center desktop:text-left">
+    <div
+      class="logo-div w-full desktop:w-[39%] flex flex-col items-center desktop:items-start text-center desktop:text-left">
       <img src="images/logo.png" alt="" class="mb-4">
       <p class="footer-content text-left">
         Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Viverra<br> nunc ante velit vitae.
@@ -490,6 +538,5 @@
     </p>
   </div>
 </footer>
-
 
 </html>

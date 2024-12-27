@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const customerCity = document.getElementById('customer-city');
 
 
-    
+
     // Define the review data for each customer
     const reviewData = [
         {
@@ -65,6 +65,5 @@ document.addEventListener('DOMContentLoaded', () => {
     updateReviewContent(0);
 });
 
-
-// FAQs
-
+// Slider JS Code
+// set and cache variables

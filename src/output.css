@@ -108,7 +108,7 @@
   --tw-contain-style:  ;
 }
 
-/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -610,10 +610,6 @@ video {
   margin-left: 0.5rem;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
-}
-
 .ml-7 {
   margin-left: 1.75rem;
 }
@@ -905,6 +901,10 @@ video {
   padding-top: 11rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1126,10 +1126,6 @@ body {
     margin-top: 0px;
   }
 
-  .mobile\:flex {
-    display: flex;
-  }
-
   .mobile\:hidden {
     display: none;
   }
@@ -1148,10 +1144,6 @@ body {
 
   .mobile\:w-full {
     width: 100%;
-  }
-
-  .mobile\:w-\[100px\] {
-    width: 100px;
   }
 
   .mobile\:max-w-\[100\%\] {
